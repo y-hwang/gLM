@@ -1,5 +1,5 @@
-test
-# gLM-stable
+
+# gLM 
 ## Genomic Language Model
 This repository contains the training and inference code for gLM described in preprint: "[Deep learning of genomic contexts predicts protein co-regulation and function](https://www.biorxiv.org/content/10.1101/2023.04.07.536042v1)"
 
