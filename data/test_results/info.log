@@ -1,0 +1,7 @@
+2023-06-13 13:06:04,144 - output folder: test_results
+2023-06-13 13:06:04,149 - log file is located here: test_results/info.log
+2023-06-13 13:06:04,150 - command: ../gLM/glm_embed.py -d batched_data -m ../../../gRoberta/no_ecoli_relative_kq/pretrained_models/no_ecoli_563.pt/pytorch_model.bin -b 100 -o test_results
+2023-06-13 13:07:05,310 - batch_size: 100
+2023-06-13 13:07:05,318 - found prot_index_dict.pkl file, using this as id mapping
+2023-06-13 13:07:05,318 - 1 batched data pkl files to embed
+2023-06-13 13:07:05,318 - Inference with mixed precision model
