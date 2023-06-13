@@ -92,7 +92,7 @@ You can output all inference results (plm_embs/glm_embs/prot_ids/outputs/output_
 
 You can also output attention matrices by adding --attention flag. Attentions will be saved for post processing in your ourput directory *.attention.pkl
 
-We provide the expected output in data/test_results/. 
+We provide the expected output in data/test_results/results/batch.pkl.glm.embs.pkl and the expected runtime for this on A100 is ~2 minutes. 
 
 We are working on making inference code available as a colab notebook. so **stay tuned**. 
 ## Train your own gLM on your custom dataset
