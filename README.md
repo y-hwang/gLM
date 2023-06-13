@@ -66,7 +66,7 @@ In our study we use [esm2](https://github.com/facebookresearch/esm) to embed pro
 cd data
 python plm_embed.py example_data/inference_example/test.fa example_data/inference_example/test.esm.embs.pkl
 ```
-
+we provide the expected output example_data/inference_example/test.esm.embs.pkl for your reference and on a A100 GPU this test example took less than 2 minutes to complete. 
 #### 3. batch your data for gLM inference. 
 ```
 cd data
@@ -74,7 +74,10 @@ cd data
 mkdir batched_data  
 python batch_data.py example_data/inference_example/test.esm.embs.pkl example_data/inference_example/contig_to_prots.tsv batched_data
 ```
-The output data directory (batched_data) now contains two files. The output directory (batched_data) which contains batch.pkl and prot_index_dict.pkl files. The former is the input containing your data input embeddings, and the latter contains the dictionary mapping from protein index to protein ID. 
+The output data directory (batched_data) now contains two files. The output directory (batched_data) which contains batch.pkl and prot_index_dict.pkl files. The former is the input containing your data input embeddings, and the latter contains the dictionary mapping from protein index to protein ID.
+
+we provide the expected output example_data/inference_example/test.esm.embs.pkl for your reference and this particular test example took us less than 1 minutes to run. 
+
 
 #### 4. compute gLM embeddings.
 ```
@@ -89,6 +92,8 @@ You can output all inference results (plm_embs/glm_embs/prot_ids/outputs/output_
 
 You can also output attention matrices by adding --attention flag. Attentions will be saved for post processing in your ourput directory *.attention.pkl
 
+We provide the expected output in data/test_results/. 
+
 We are working on making inference code available as a colab notebook. so **stay tuned**. 
 ## Train your own gLM on your custom dataset
 We provide the training script for gLM for your custom dataset. 
@@ -97,6 +102,7 @@ cd data
 python ../gLM/train.py -d example_data/training_example -o test_train_dir
 ```
 The data directory (data/example_data/training_example) contains batched training data which can be generated using batch_data.py (see sections 1-3 in "Compute gLM embeddings" above). Make sure pkl files containing training data starts with "train" and pkl files containing eval data starts with "eval". 
+For example: 
 ```
 ls example_data/training_example
 eval.0.PC_100.pkl  train.0.PC_100.pkl  train.1.PC_100.pkl
