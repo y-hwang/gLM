@@ -1,7 +1,7 @@
 
 # gLM 
 ## Genomic Language Model
-This repository contains the training and inference code for gLM described in preprint: "[Deep learning of genomic contexts predicts protein co-regulation and function](https://www.biorxiv.org/content/10.1101/2023.04.07.536042v1)"
+This repository contains the training and inference code for gLM described in preprint: "[Genomic language model predicts protein co-regulation and function](https://www.biorxiv.org/content/10.1101/2023.04.07.536042v3)"
 
 ## License
 Our model and accompanying scripts are distributed for academic and non-commercial use only. Please refer to the LICENSE attached to this repo and reach out if you have any questions.  
@@ -119,16 +119,19 @@ We included scripts used for downstream analyses and visualizations (e.g. EC num
 ## Citations
 If you find gLM useful in your work, please cite our paper:
 
-Hwang, Y. Cornman, A. Ovchinnikov, S. and Girguis, P. (2023) "[Deep learning of genomic contexts predicts protein co-regulation and function](https://www.biorxiv.org/content/10.1101/2023.04.07.536042v1)", BioRxiv
+Hwang, Y. Cornman, A. Kellogg, E. Ovchinnikov, S. and Girguis, P. (2023) "[Genomic language model predicts protein co-regulation and function](https://www.biorxiv.org/content/10.1101/2023.04.07.536042v3)", BioRxiv
 
 ```bibtex
-@article{hwang2023glm,
-  author = {Hwang, Yunha and Cornman, Andre and Ovchinnikov, Sergey and Girguis, Peter},
-  title={Transformer protein language models are unsupervised structure learners},
-  year={2023},
-  doi={10.1101/2023.04.07.536042},
-  url={https://www.biorxiv.org/content/10.1101/2023.04.07.536042v1},
-  journal={bioRxiv}
+@article {Hwang2023.04.07.536042,
+	author = {Yunha Hwang and Andre L. Cornman and Elizabeth H. Kellogg and Sergey Ovchinnikov and Peter R. Girguis},
+	title = {Genomic language model predicts protein co-regulation and function},
+	elocation-id = {2023.04.07.536042},
+	year = {2023},
+	doi = {10.1101/2023.04.07.536042},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2023/10/15/2023.04.07.536042},
+	eprint = {https://www.biorxiv.org/content/early/2023/10/15/2023.04.07.536042.full.pdf},
+	journal = {bioRxiv}
 }
 ```
 
