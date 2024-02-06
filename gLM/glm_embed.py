@@ -115,6 +115,12 @@ def infer(logging, data_dir, model,output_path, device, id_dict):
             ori_prot_ids = get_original_prot_ids(all_prot_ids,id_dict)
         else:
             ori_prot_ids = all_prot_ids
+        # remove padding
+        label_embs = label_embs[np.where(all_prot_ids != 0)[0]]
+        input_embs = input_embs[np.where(all_prot_ids != 0)[0]]
+        hidden_embs = hidden_embs[np.where(all_prot_ids != 0)[0]]
+        output_embs = output_embs[np.where(all_prot_ids != 0)[0]]
+        all_probs = all_probs[np.where(all_prot_ids != 0)[0]]
         if ALL_RESULTS:
             results_filename = output_path+os.path.basename(pkl_f)+".results.pkl"
             results = {}
@@ -134,6 +140,7 @@ def infer(logging, data_dir, model,output_path, device, id_dict):
             attention_f.close()
 
         glm_embs = []
+
         for i,emb in enumerate(hidden_embs):
             glm_embs.append((ori_prot_ids[i],emb))
         glm_embs_filename = output_path+os.path.basename(pkl_f)+".glm.embs.pkl"
