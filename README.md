@@ -82,7 +82,7 @@ we provide the expected output data/example_data/batched_data/ for your referenc
 #### 4. compute gLM embeddings.
 ```
 cd data
-python ../gLM/glm_embed.py -d batched_data -m ../model/glm.bin -b 100 -o test_results
+python ../gLM/glm_embed.py -d example_data/batched_data -m ../model/glm.bin -b 100 -o test_results
 ```
 If you come across GPU memory errors, try reducing batch size (-b).
 
