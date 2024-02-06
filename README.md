@@ -61,7 +61,7 @@ contig_1  +prot_17;-prot_18;-prot_19;-prot_20;-prot_21;+prot_22;-prot_23;+prot_2
 see contig_to_prots.tsv and test.fa in example_data as an example.
 
 #### 2. compute pLM embeddings. 
-In our study we use [esm2](https://github.com/facebookresearch/esm) to embed proteins but one can replace this step with other embeddings (e.g. see [bio-embeddings](https://github.com/sacdallago/bio_embeddings))
+We use [esm2](https://github.com/facebookresearch/esm) to embed proteins. 
 ```
 cd data
 python plm_embed.py example_data/inference_example/test.fa example_data/inference_example/test.esm.embs.pkl
