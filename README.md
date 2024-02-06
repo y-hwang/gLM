@@ -72,7 +72,7 @@ we provide the expected output example_data/inference_example/test.esm.embs.pkl 
 cd data
 # make output directory
 mkdir batched_data  
-python batch_data.py example_data/inference_example/test.esm.embs.pkl example_data/inference_example/contig_to_prots.tsv data/example_data/batched_data
+python batch_data.py example_data/inference_example/test.esm.embs.pkl example_data/inference_example/contig_to_prots.tsv example_data/batched_data
 ```
 The output data directory (batched_data) now contains two files. The output directory (batched_data) which contains batch.pkl and prot_index_dict.pkl files. The former is the input containing your data input embeddings, and the latter contains the dictionary mapping from protein index to protein ID.
 
