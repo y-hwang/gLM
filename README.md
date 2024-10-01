@@ -12,7 +12,7 @@ Our model and accompanying scripts are distributed for academic and non-commerci
 ## Set up python environment 
 #### using conda
 ```
-conda env create -f environment.yml python==3.10.8
+conda env create -f environment.yml
 conda activate glm-env
 pip install torch==1.12.1+cu116  torchvision==0.13.1+cu116 -f https://download.pytorch.org/whl/torch_stable.html
 ```
@@ -96,10 +96,10 @@ We provide the expected output in data/test_results/results/batch.pkl.glm.embs.p
 
 We are working on making inference code available as a colab notebook. so **stay tuned**. 
 ## Train your own gLM on your custom dataset
-We provide the training script for gLM for your custom dataset. 
+We provide the training script for gLM for your custom dataset. You may wish to limit the checkpoint frequency (`--checkpoint_freq`) to save disk space. 
 ```
 cd data
-python ../gLM/train.py -d example_data/training_example -o test_train_dir
+python ../gLM/train.py -d example_data/training_example -o test_train_dir --checkpoint_freq 500
 ```
 The data directory (data/example_data/training_example) contains batched training data which can be generated using batch_data.py (see sections 1-3 in "Compute gLM embeddings" above). Make sure pkl files containing training data starts with "train" and pkl files containing eval data starts with "eval". 
 For example: 
