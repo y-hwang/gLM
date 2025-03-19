@@ -1,6 +1,6 @@
-**UPDATE: We released gLM2, the latest iteration of gLM, please check it out [here](https://github.com/TattaBio/gLM2)**
+**UPDATE: We released gLM2, the latest iteration of gLM, please check it out [here](https://github.com/TattaBio/gLM2).**.
 
-**The [manuscript](https://www.biorxiv.org/content/10.1101/2024.08.14.607850v2) describing gLM2 is now accepted at ICLR2025**
+**The [manuscript](https://www.biorxiv.org/content/10.1101/2024.08.14.607850v2) describing gLM2 is now accepted at ICLR2025.**
 # gLM 
 ## Genomic Language Model
 This repository contains the training and inference code for gLM described in preprint: "[Genomic language model predicts protein co-regulation and function](https://www.biorxiv.org/content/10.1101/2023.04.07.536042v3)"
